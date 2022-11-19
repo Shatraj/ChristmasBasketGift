@@ -1,0 +1,86 @@
+﻿@page
+@model ChristmasBasketGift.Pages.Form.CustomModel
+@{
+}
+<br/><br/>
+<div class="text-center container sanDiv">
+    <br/>
+    <h1 class="text-white"> Create Your Own Gift Basket </h1>
+    <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 rounded-5 alert-light col-10">
+        <input type="text" asp-for="Gift.Name" placeholder="Give Your Backet a Name">
+        </br></br>
+
+        <input type="checkbox" asp-for="Gift.WhiteWine" placeholder="WhiteWine" /> White Wine 
+        <img src=~/Image/WhiteWine.jpg class="img1"/> &nbsp;&nbsp;
+       
+        <input type="checkbox" asp-for="Gift.RedWine" placeholder="RedWine" /> Red Wine 
+                <img src=~/Image/RedWine.jpg class="img1"/>  &nbsp;&nbsp;
+
+        <input type="checkbox" asp-for="Gift.WhiteChocolate" placeholder="WhiteChocolate" /> White Chocolate
+                <img src=~/Image/white_chocolate.jpg class="img1"/> &nbsp;&nbsp;
+                </br><br/>
+
+        <input type="checkbox" asp-for="Gift.DarkChocolate" placeholder="DarkChocolate" /> Dark Chocolate
+        <img src=~/Image/darkchoco.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.Bonbons" placeholder="Bonbons" /> Bonbons
+                <img src=~/Image/bonbons.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.Snacks" placeholder="Snack" /> Snack
+                <img src=~/Image/snack.jpg class="img1"/> &nbsp;&nbsp;
+
+               </br> <br/>
+
+        <input type="checkbox" asp-for="Gift.WineGlass" placeholder="WineGlass" />Wine Glass
+                        <img src=~/Image/wineglass.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.Panettone" placeholder="Panettone" /> Panettone
+                        <img src=~/Image/panettone.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.Sweets" placeholder="Sweets" /> Sweets
+                        <img src=~/Image/sweets.jpg class="img1"/> &nbsp;&nbsp;
+
+                        <br/></br>
+        <input type="checkbox" asp-for="Gift.MixedNuts" placeholder="MixedNuts" /> Mixed Nuts
+                        <img src=~/Image/mixnuts.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.GoldPear" placeholder="GoldPear" /> Gold Pear
+                        <img src=~/Image/goldpear.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.Cheese" placeholder="Cheese" /> Cheese
+                        <img src=~/Image/cheese.jpg class="img1"/> &nbsp;&nbsp;
+
+         <br/></br>
+         <input type="checkbox" asp-for="Gift.Ham" placeholder="Ham" /> Ham
+                        <img src=~/Image/ham.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.DriedFruit" placeholder="DriedFruit" />Dried Fruit
+                        <img src=~/Image/driedfruit.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.Cookies" placeholder="Cookies" /> Cookies
+                        <img src=~/Image/cookie.jpg class="img1"/> &nbsp;&nbsp;
+
+                        <br/></br>
+        <input type="checkbox" asp-for="Gift.Cake" placeholder="Cake" /> Cake
+                        <img src=~/Image/cake.jpg class="img1"/> &nbsp;&nbsp;
+
+
+        <input type="checkbox" asp-for="Gift.MixSmallChocolate" placeholder="MixSmallChocolate" /> MixSmallChocolate
+                        <img src=~/Image/smallmixchoco.jpg class="img1"/> &nbsp;&nbsp;
+                        <br/> <br/>
+
+                        <button class="btn btn-primary mt-1" type="submit" asp-page="Checkout/ThankYou"> Order My Gift </button>
+
+                        <br/><br/><br/>
+
+    </form>
+    <br/><br/>
+</div>

@@ -1,0 +1,22 @@
+﻿@page
+@model ChristmasBasketGift.Pages.Checkout.CheckoutModel
+@{
+}
+
+
+<h1 class="text-center text-black"> Your Order </h1>
+
+@{
+    var imagePath = "~/Image/img/" + (@Model.ImageTitle + ".webp");
+}
+<br/>
+<div class="align-content-center">
+    <div class="col-3 mx-auto mb-5">
+        <img src=@imagePath class="w-100" asp-append-version="true" />
+        <br/><br/><br/>
+        <p class="text-center text-black sanText1"> Your Order For the Gift Basket @Model.Name is ready!</p>
+        <p class="text-center text-black sanText1"> Total price for your order is: @Model.GiftPrice $</p>
+        <br/>
+        <a class="btn alert-primary mt-1 mx-auto" asp-page="ThankYou"> Confirm Your Order</a>
+    </div>
+</div>
