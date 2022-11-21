@@ -36,11 +36,13 @@
             @foreach(var Gift in Model.fakeDbGift)
             {
                 var imagePath = "~/Image/img/" + (Gift.ImageTitle + ".webp");
-                <div class="col-4 mb-5 sanDiv">
-                    
+                <div class="col-4 mb-5 sanDiv"> 
+                    <br/>
+                 <p class="sanText1 text-white"> @Gift.Name </p>
+                 
                 <img src="@imagePath" class="w-100" asp-append-version="true">
                 <br/><br/>
-                <a class="btn btn-primary mt-1" asp-area="" asp-page="Checkout/Checkout"  asp-route-ImageTitle="@Gift.ImageTitle" asp-route-GiftPrice="@Gift.FinalPrice"> Get this Basket</a>
+                <a class="btn btn-primary mt-1" asp-area="" asp-page="Checkout/Checkout"  asp-route-ImageTitle="@Gift.ImageTitle" asp-route-GiftPrice="@Gift.FinalPrice" asp-route-Name="@Gift.Name"> Get this Basket</a>
            <br/><br/>
             </div>
             

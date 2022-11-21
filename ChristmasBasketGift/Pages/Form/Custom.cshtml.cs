@@ -9,12 +9,15 @@ namespace ChristmasBasketGift.Pages.Form
         [BindProperty]
         public GiftModel Gift { get; set; }
         public float GiftPrice { get; set; }
+        public string Name { get; set; }
+
         public void OnGet()
         {
         }
         public IActionResult OnPost()
         {
             GiftPrice = Gift.BasePrice;
+           Name= Gift.Name;
 
             if (Gift.WhiteWine) GiftPrice += 10;
             if (Gift.RedWine) GiftPrice += 12;
@@ -34,7 +37,7 @@ namespace ChristmasBasketGift.Pages.Form
             if (Gift.Cookies) GiftPrice += 8;
             if (Gift.MixSmallChocolate) GiftPrice += 10;
 
-            return RedirectToPage("/Checkout/Checkout", new { Gift.Name, GiftPrice });
+            return RedirectToPage("/Checkout/Checkout", new { Name, GiftPrice });
             
         }
     }

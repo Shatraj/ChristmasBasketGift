@@ -1,0 +1,45 @@
+﻿@page
+@model ChristmasBasketGift.Pages.OrdersModel
+@{
+}
+
+<h3> Orders </h3>
+
+<hr/>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+
+            <th>
+                Name
+            </th>
+
+            <th>
+                Price
+            </th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var order in Model.GiftOrders)
+        {
+            <tr>
+                <td>
+                    @order.Id
+</td>
+            <td>
+                    @order.Name
+</td>
+            <td>
+                    @order.BasePrice
+</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
